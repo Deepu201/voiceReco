@@ -3,17 +3,17 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 const Voice = () => {
 
     const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition()
-
+const voice=()=>SpeechRecognition.startListening({continuous:true,language:"en-IN"})
   if (!browserSupportsSpeechRecognition) {
     return null
   }
 
   return (
     <>
-    <div>
+    <div>:_____________________________________________________:
         {transcript}
     </div>
-    <button onClick={SpeechRecognition.startListening}>start</button>
+    <button onClick={voice}>start</button>
     <button onClick={SpeechRecognition.stopListening}>stop</button>
     </>
   )
