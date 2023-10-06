@@ -2,7 +2,7 @@ import React from 'react'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 const Voice = () => {
 
-    const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition({ commands })
+    const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition()
 
   if (!browserSupportsSpeechRecognition) {
     return null
