@@ -11,7 +11,7 @@ const voice=()=>SpeechRecognition.startListening({continuous:true,language:"en-I
   return (
     <>
     <div>:_____________________________________________________:
-      <div>hiiiiii</div>
+      <div>hiiiiiig</div>
         {transcript}
     </div>
     <button onClick={voice}>start</button>
